@@ -2,7 +2,7 @@
 
 // --8<-- [start:core]
 // Binary exponentiation.
-int pow(int a, int b, int m) {
+long long pow(long long a, long long b, long long m) {
   long long res = 1, po = a;
   for (; b; b >>= 1) {
     if (b & 1) res = res * po % m;
